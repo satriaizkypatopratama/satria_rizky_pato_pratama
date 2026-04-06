@@ -1,198 +1,66 @@
-# Aplikasi Perpustakaan
-### _Aplikasi Perpustakaan Ini Merupakan Aplikasi Peminjaman Buku Online_
+<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
-[![Next.js](https://img.shields.io/badge/Next.js-14-black?logo=next.js)](https://nextjs.org/) [![React](https://img.shields.io/badge/React-18-61DAFB?logo=react&logoColor=white)](https://react.dev/) [![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/) [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.4-06B6D4?logo=tailwindcss&logoColor=white)](https://tailwindcss.com/) [![Zustand](https://img.shields.io/badge/Zustand-5-orange)](https://zustand-demo.pmnd.rs/) [![Vercel](https://img.shields.io/badge/Deployed_on-Vercel-black?logo=vercel)](https://dillinger.io) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+<p align="center">
+<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+</p>
 
+## About Laravel
 
-## Features Aplikasi Perpustakaan
+Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
 
-- **Login, register, logout** Akun user bisa dibuat dan dipakai untuk masuk ke sistem.
-- **Role user dan admin** Website membedakan hak akses antara user dan admin.
-- **Daftar Buku Di Halaman Utama** semua pengunjung bisa melihat daftar buku yang tersedia
-- **Pencarian Buku** — buku bisa dicari judul, penulis, kategori, dan detail.
-- **Detail Buku** setiap buku punya halaman detail untuk melihat informasi lengkap
-- **Peminjaman buku oleh user** User bisa meminjam buku jika stok tersedia.
-- **Proteksi pinjam buku yang sama** — User tidak bisa meminjam buku yang sama lebih dari satu kali selama statusnya masih dipinjam.
-- **Riwayat peminjaman user** — User bisa melihat daftar buku yang pernah atau sedang dipinjam.
-- **Manajemen buku oleh admin** — 
-Admin Bisa 
--- Tambah Buku
--- Liat Daftar Buku
--- Lihat Detail Buku
--- Edit Buku
--- Hapus Buku
-- **Manajemen peminjaman oleh admin** — Admin bisa melihat semua data peminjaman dan memproses pengembalian buku.
-- **Pengembalian buku + denda** — Saat admin mengembalikan buku, sistem menghitung denda keterlambatan otomatis.
-- **Stok buku otomatis** — Saat buku dipinjam stok berkurang, saat dikembalikan stok bertambah.
-- **Profil pengguna** — User bisa ubah profil, password, dan hapus akun.
-- **Tampilan branding perpustakaan** — Login dan register sudah memakai branding Perpustakaan dan logo.
+- [Simple, fast routing engine](https://laravel.com/docs/routing).
+- [Powerful dependency injection container](https://laravel.com/docs/container).
+- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
+- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
+- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
+- [Robust background job processing](https://laravel.com/docs/queues).
+- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
 
-## Tech
+Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
-Aplikasi Perpustakaan Dibangun Dengan Menggunakan:
+## Learning Laravel
 
-Website perpustakaan ini dibangun menggunakan Laravel sebagai framework utama dalam pengembangan aplikasi. Laravel digunakan karena memiliki struktur yang rapi, mudah dikembangkan, dan menyediakan banyak fitur bawaan yang membantu dalam pembuatan website, seperti routing, autentikasi, pengelolaan database, dan sistem template. Bahasa pemrograman yang digunakan dalam project ini adalah PHP, karena Laravel berjalan di atas PHP dan sangat cocok digunakan untuk membangun aplikasi web dinamis seperti sistem perpustakaan.
+Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
 
-Untuk pengelolaan data, website ini menggunakan MySQL sebagai database. Database ini berfungsi untuk menyimpan seluruh informasi penting di dalam sistem, seperti data pengguna, data buku, data peminjaman, data pengembalian, serta denda keterlambatan. Selama proses pengembangan, website ini dijalankan menggunakan XAMPP, yang berfungsi sebagai server lokal. XAMPP membantu menjalankan Apache sebagai web server dan MySQL sebagai database server, sehingga website dapat diuji dan dijalankan di komputer lokal sebelum dipublikasikan.
+You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
 
-Pada bagian tampilan, website ini dibuat menggunakan Blade sebagai template engine bawaan Laravel. Blade memudahkan pembuatan halaman web agar lebih terstruktur, rapi, dan mudah dikelola. Selain itu, tampilan antarmuka website juga menggunakan HTML, CSS, dan JavaScript agar halaman dapat tampil lebih menarik, responsif, dan interaktif. Dengan kombinasi teknologi tersebut, website perpustakaan ini dapat digunakan untuk menampilkan daftar buku, melakukan pencarian, meminjam buku, mengelola data buku, serta memproses pengembalian dengan lebih mudah dan efisien.
+If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
 
-Secara keseluruhan, website ini dibangun dengan menggabungkan Laravel, PHP, MySQL, XAMPP, Blade, HTML, CSS, dan JavaScript untuk menghasilkan sistem perpustakaan berbasis web yang modern, terstruktur, dan mudah digunakan oleh admin maupun user.
+## Laravel Sponsors
 
-## Requirement
-- Versi yang dipakai di project ini adalah:
+We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
 
-- Laravel 10.50.0
-- PHP 8.2.12 pada lingkungan yang sedang dipakai
-- MySQL dipakai sebagai database
-- Laravel Breeze ^1.29
-- Vite ^5.0.0
-- Tailwind CSS ^3.1.0
+### Premium Partners
 
-## structure
-📦routes
- ┣ 📜api.php
- ┣ 📜auth.php
- ┣ 📜channels.php
- ┣ 📜console.php
- ┗ 📜web.php
- 📦Controllers
- ┣ 📂Auth
- ┃ ┣ 📜AuthenticatedSessionController.php
- ┃ ┣ 📜ConfirmablePasswordController.php
- ┃ ┣ 📜EmailVerificationNotificationController.php
- ┃ ┣ 📜EmailVerificationPromptController.php
- ┃ ┣ 📜NewPasswordController.php
- ┃ ┣ 📜PasswordController.php
- ┃ ┣ 📜PasswordResetLinkController.php
- ┃ ┣ 📜RegisteredUserController.php
- ┃ ┗ 📜VerifyEmailController.php
- ┣ 📜bukucontroller.php
- ┣ 📜Controller.php
- ┣ 📜peminjamancontroller.php
- ┗ 📜ProfileController.php
- 📦Models
- ┣ 📜Buku.php
- ┣ 📜peminjaman.php
- ┗ 📜User.php
- 📦views
- ┣ 📂Admin
- ┃ ┣ 📂buku
- ┃ ┃ ┣ 📜create.blade.php
- ┃ ┃ ┣ 📜edit.blade.php
- ┃ ┃ ┣ 📜index.blade.php
- ┃ ┃ ┗ 📜show.blade.php
- ┃ ┗ 📂peminjaman
- ┃ ┃ ┗ 📜index.blade.php
- ┣ 📂auth
- ┃ ┣ 📜confirm-password.blade.php
- ┃ ┣ 📜forgot-password.blade.php
- ┃ ┣ 📜login.blade.php
- ┃ ┣ 📜register.blade.php
- ┃ ┣ 📜reset-password.blade.php
- ┃ ┗ 📜verify-email.blade.php
- ┣ 📂buku
- ┃ ┗ 📜show.blade.php
- ┣ 📂components
- ┃ ┣ 📜application-logo.blade.php
- ┃ ┣ 📜auth-session-status.blade.php
- ┃ ┣ 📜danger-button.blade.php
- ┃ ┣ 📜dropdown-link.blade.php
- ┃ ┣ 📜dropdown.blade.php
- ┃ ┣ 📜input-error.blade.php
- ┃ ┣ 📜input-label.blade.php
- ┃ ┣ 📜modal.blade.php
- ┃ ┣ 📜nav-link.blade.php
- ┃ ┣ 📜primary-button.blade.php
- ┃ ┣ 📜responsive-nav-link.blade.php
- ┃ ┣ 📜secondary-button.blade.php
- ┃ ┗ 📜text-input.blade.php
- ┣ 📂layouts
- ┃ ┣ 📜app.blade.php
- ┃ ┣ 📜guest.blade.php
- ┃ ┗ 📜navigation.blade.php
- ┣ 📂profile
- ┃ ┣ 📂partials
- ┃ ┃ ┣ 📜delete-user-form.blade.php
- ┃ ┃ ┣ 📜update-password-form.blade.php
- ┃ ┃ ┗ 📜update-profile-information-form.blade.php
- ┃ ┗ 📜edit.blade.php
- ┣ 📂user
- ┃ ┗ 📜riwayat.blade.php
- ┣ 📜dashboard.blade.php
- ┗ 📜welcome.blade.php
- 📦migrations
- ┣ 📜2014_10_12_000000_create_users_table.php
- ┣ 📜2014_10_12_100000_create_password_reset_tokens_table.php
- ┣ 📜2019_08_19_000000_create_failed_jobs_table.php
- ┣ 📜2019_12_14_000001_create_personal_access_tokens_table.php
- ┣ 📜2026_04_01_000001_add_role_to_users_table.php
- ┣ 📜2026_04_01_000002_create_buku_table.php
- ┣ 📜2026_04_01_000003_create_peminjaman_table.php
- ┣ 📜2026_04_05_000004_add_detail_to_buku_table.php
- ┗ 📜2026_04_05_000005_optimize_library_tables.php
- 📦public
- ┣ 📂build
- ┃ ┣ 📂assets
- ┃ ┃ ┣ 📜app-BR77_l1h.js
- ┃ ┃ ┗ 📜app-CKcAoPeL.css
- ┃ ┗ 📜manifest.json
- ┣ 📂storage
- ┃ ┣ 📂buku
- ┃ ┃ ┣ 📜5V6QyyjchHIQ4AufVcUnlyseO18iZDuFyd1qgmc3.jpg
- ┃ ┃ ┣ 📜dBSxr3rIlKSdfKzWwU3VYBmNZuKILtLliEhmVqyj.jpg
- ┃ ┃ ┣ 📜NtFow62DeETUr2wCjZaIQOJm1M23ht0OUFW0KvLa.jpg
- ┃ ┃ ┗ 📜rbjIegVbWPbEUPnTTmPceIlhHmLlGpsiXjb6GNWF.jpg
- ┃ ┗ 📜.gitignore
- ┣ 📜.htaccess
- ┣ 📜favicon.ico
- ┣ 📜index.php
- ┗ 📜robots.txt
-## Instalation
-- 1  Pindahkan project ke folder htdocs
-Simpan folder project website perpustakaan ke dalam folder htdocs yang ada di XAMPP.
-Contoh:
-C:\xampp\htdocs\perpustakaan
+- **[Vehikl](https://vehikl.com/)**
+- **[Tighten Co.](https://tighten.co)**
+- **[WebReinvent](https://webreinvent.com/)**
+- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
+- **[64 Robots](https://64robots.com)**
+- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
+- **[Cyber-Duck](https://cyber-duck.co.uk)**
+- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
+- **[Jump24](https://jump24.co.uk)**
+- **[Redberry](https://redberry.international/laravel/)**
+- **[Active Logic](https://activelogic.com)**
+- **[byte5](https://byte5.de)**
+- **[OP.GG](https://op.gg)**
 
-- 2  Jalankan XAMPP
-Buka aplikasi XAMPP, lalu aktifkan:
-Apache
-MySQL
+## Contributing
 
-- 3  Buka project di terminal
-Masuk ke folder project melalui terminal atau CMD:
-cd C:\xampp\htdocs\perpustakaan
-- 4  Install dependency Laravel
-Jalankan perintah berikut untuk menginstall semua dependency:
-composer install
+Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
 
-- 5  Buat file .env
-Jika file .env belum ada, salin dari .env.example:
-copy .env.example .env
-- 6  Generate application key
-Jalankan perintah berikut:
-php artisan key:generate
-- 7  Buat database
-Buka phpMyAdmin dari XAMPP, lalu buat database baru dengan nama:
-perpustakaan
-- 8  Atur konfigurasi database
-Buka file .env, lalu sesuaikan bagian database seperti berikut:
-DB_CONNECTION=mysql
-DB_HOST=127.0.0.1
-DB_PORT=3306
-DB_DATABASE=perpustakaan
-DB_USERNAME=root
-DB_PASSWORD=
-- 9  Jalankan migration
-Setelah database dibuat, jalankan perintah:
-php artisan migrate
-- 10  Jalankan server Laravel
-Jalankan project dengan perintah:
-php artisan serve
-- 11  Buka website di browser
-Setelah server berjalan, buka:
-http://127.0.0.1:8000
+## Code of Conduct
 
+In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
 
+## Security Vulnerabilities
 
-**Free Software, Hell Yeah!**
+If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+
+## License
+
+The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
