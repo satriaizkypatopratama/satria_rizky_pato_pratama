@@ -149,33 +149,33 @@ Secara keseluruhan, website ini dibangun dengan menggabungkan Laravel, PHP, MySQ
  ┣ 📜index.php
  ┗ 📜robots.txt
 ## Instalation
-- 1 . Pindahkan project ke folder htdocs
+- 1  Pindahkan project ke folder htdocs
 Simpan folder project website perpustakaan ke dalam folder htdocs yang ada di XAMPP.
 Contoh:
 C:\xampp\htdocs\perpustakaan
 
-- 2 . Jalankan XAMPP
+- 2  Jalankan XAMPP
 Buka aplikasi XAMPP, lalu aktifkan:
 Apache
 MySQL
 
-- 3 . Buka project di terminal
+- 3  Buka project di terminal
 Masuk ke folder project melalui terminal atau CMD:
 cd C:\xampp\htdocs\perpustakaan
-- 4 . Install dependency Laravel
+- 4  Install dependency Laravel
 Jalankan perintah berikut untuk menginstall semua dependency:
 composer install
 
-- 5 . Buat file .env
+- 5  Buat file .env
 Jika file .env belum ada, salin dari .env.example:
 copy .env.example .env
-- 6 . Generate application key
+- 6  Generate application key
 Jalankan perintah berikut:
 php artisan key:generate
-- 7 . Buat database
+- 7  Buat database
 Buka phpMyAdmin dari XAMPP, lalu buat database baru dengan nama:
 perpustakaan
-- 8 . Atur konfigurasi database
+- 8  Atur konfigurasi database
 Buka file .env, lalu sesuaikan bagian database seperti berikut:
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
@@ -183,13 +183,13 @@ DB_PORT=3306
 DB_DATABASE=perpustakaan
 DB_USERNAME=root
 DB_PASSWORD=
-- 9 . Jalankan migration
+- 9  Jalankan migration
 Setelah database dibuat, jalankan perintah:
 php artisan migrate
-- 10 . Jalankan server Laravel
+- 10  Jalankan server Laravel
 Jalankan project dengan perintah:
 php artisan serve
-- 11 . Buka website di browser
+- 11  Buka website di browser
 Setelah server berjalan, buka:
 http://127.0.0.1:8000
 
